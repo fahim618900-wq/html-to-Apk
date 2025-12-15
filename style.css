@@ -1,29 +1,7 @@
 body{
-  background:#0f172a;
-  font-family:Arial;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  color:white;
+  background:#0f172a; color:white; font-family:Arial; display:flex; justify-content:center; align-items:center; height:100vh;
 }
-.box{
-  background:#020617;
-  padding:25px;
-  width:320px;
-  border-radius:10px;
-}
-input,button{
-  width:100%;
-  margin-top:8px;
-  padding:10px;
-  border:none;
-  border-radius:5px;
-}
-button{
-  background:#22c55e;
-  cursor:pointer;
-}
-button:hover{
-  background:#16a34a;
-}
+.box{background:#020617; padding:25px; width:320px; border-radius:10px;}
+input,button{width:100%; margin-top:8px; padding:10px; border:none; border-radius:5px;}
+button{background:#22c55e; cursor:pointer;}
+button:hover{background:#16a34a;}

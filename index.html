@@ -2,31 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web to APK Builder</title>
+<title>Web2APK</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="box">
   <h2>Web ➜ APK Generator</h2>
-
   <label>Website URL</label>
   <input type="url" id="url" placeholder="https://example.com">
-
   <label>App Name</label>
   <input type="text" id="app">
-
   <label>Package Name</label>
   <input type="text" id="pkg" placeholder="com.example.app">
-
-  <label>App Icon (PNG)</label>
-  <input type="file" id="icon" accept="image/png">
-
-  <button onclick="generate()">Generate APK Project</button>
-
-  <p id="msg"></p>
+  <button onclick="generate()">Generate APK</button>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>

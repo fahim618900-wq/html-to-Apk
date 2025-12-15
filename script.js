@@ -1,13 +1,14 @@
 function generate(){
-  let url = document.getElementById("url").value;
-  let app = document.getElementById("app").value;
-  let pkg = document.getElementById("pkg").value;
-
-  if(!url || !app || !pkg){
-    document.getElementById("msg").innerText = "সব ফিল্ড পূরণ করুন";
-    return;
-  }
-
-  document.getElementById("msg").innerText =
-    "APK Project Generated (Backend লাগবে Build করার জন্য)";
+  fetch("http://localhost:3000/build",{
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body:JSON.stringify({
+      url: document.getElementById("url").value,
+      appName: document.getElementById("app").value,
+      packageName: document.getElementById("pkg").value
+    })
+  })
+  .then(res => res.json())
+  .then(data => alert(JSON.stringify(data)))
+  .catch(err => alert("Backend not running"));
 }
